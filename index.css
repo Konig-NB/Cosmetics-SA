@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color: #e5680f;
+    --black:#13131a;
+    --bg:#f2f2f6;
+    --border:.1rem solid rgba(255,255,255,0.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+/*================================================NAV========================================*/
+.nav{
+    height: 235px;
+}
+.nav .img-icons img{
+    position: absolute;
+    height: 16.5rem;
+    margin-left: 45%;
+    padding-right: 20%;
+}
+.nav .img-icons i{
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 7rem;
+    padding-left: 2rem;
+    margin-left: 80%;
+}
+.nav .img-icons #search{
+    padding-left: 0%;
+    cursor: pointer;
+}
+.nav .img-icons #profile{
+    padding-left: 5%;
+    cursor: pointer;
+}
+.nav .img-icons #cart{
+    padding-left: 10%;
+    cursor: pointer;
+}
+.nav .menu{
+    position: absolute;
+    margin-top: 20rem;
+    text-align: center;
+}
+.nav .menu ul{
+    display: flex;
+    padding-left: 51rem;
+}
+.nav .menu ul li{
+    margin-left: 2.5rem;
+    list-style: none;
+}
+.nav .menu ul li a{
+    color: #010103;
+    font-size: 1.2rem;
+}
+.nav .menu ul li a span{
+    color: var(--main-color);
+}
+.nav .menu ul li a span:hover{
+    color: #010103;
+}
+.nav .menu ul li a:hover{
+    color: var(--main-color);
+}
+/*================================================NAV-BACK========================================*/
+.nav-back img{
+    height: 51rem;
+    width: 100%;
+}
+/*================================================MEDIA========================================*/
+@media(max-width:1145px){
+    .nav .menu ul{
+        padding-left: 36rem;
+    }
+}
+@media(max-width:900px){
+    .nav .menu ul{
+        padding-left: 25rem;
+    }
+}
+@media(max-width:640px){
+    .nav .menu ul{
+        padding-left: 16rem;
+    }
+}
+@media(max-width:510px){
+    .nav .menu ul{
+        display: none;
+    }
+    .nav .img-icons i{
+        display: none;
+    }
+    .nav-back img{
+        height: 25rem;
+    }
+    .nav .img-icons img{
+        margin-left: 32%;
+    }
+    .service .delivery{
+        display: flex;
+        margin-right: -20%;
+        font-size: 1.5rem; 
+    }
+}
+/*================================================ABOUT========================================*/
+.about{
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+.about h3{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+.about h1{
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+.about p{
+    font-weight: lighter;
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem;
+}
+.about p span{
+    font-weight: bold;
+}
+.about h5{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding-bottom: 1.5rem;
+}
+.about h5 span{
+    font-weight: bold;
+}
+.about h6{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding-bottom: 1.5rem;
+}
+.about h6 span{
+    font-weight: bold;
+}
+/*================================================Service========================================*/
+.service{
+    background: var(--bg);
+    padding: 2rem 0;
+    display: flex;
+    color: #424242;
+}
+.service i{
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+}
+.service .delivery{
+    display: flex;
+    margin-left: 22%;
+    font-size: 1.5rem;
+    
+}
+.service .chat{
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 25%;
+}
+/*================================================Sale========================================*/
+.sale{
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: .5rem;
+    justify-content: space-evenly;
+}
+.sale .prod{
+    background: transparent;
+    height: 100%;
+    width: 25rem;
+    border: .1rem solid rgba(11, 11, 11, 0.3);
+}
+.sale .prod img{
+    height: 25rem;
+}
+.sale .prod h5{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.sale .prod .rating{
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--main-color);
+}
+.sale .prod .rating p{
+    color: #000;
+}
+.sale .prod .price{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.sale .prod .price span{
+    display: block;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: line-through;
+}
+.sale .prod .sub{
+    padding: 2rem 0;
+    text-align: center;
+}
+.sale .prod .sub button{
+    border-radius: 10px;
+    height: 3rem;
+    width: 12rem;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.sale .prod .sub button:hover{
+    opacity: 0.8;
+}
+/*================================================Products========================================*/
+#products{
+    background: var(--bg);
+    padding-top: 3rem;
+}
+.heading{
+    padding-top: .5rem;
+    background: var(--bg);
+    text-align: center;
+    font-size: 2.5rem;
+}
+#products .prod{
+    background: #fff;
+    border: none;
+    padding: 1.5rem 0;
+}
+#heading{
+    background: #fff;
+}
+/*================================================Arrival========================================*/
+#arrivals .prod{
+    padding: 1.5rem 1rem;
+}
+#arrivals .prod img{
+    height: 20rem;
+    width: 100%;
+}
+/*=============================================================FOOTER================================================*/
+.footer{
+    background: var(--bg);
+    text-align: center;
+}
+.footer .share{
+    padding: 1rem 0;
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #000;
+    border: var(--border);
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+.footer .share a:hover{
+    background-color: var(--main-color);
+    color: #000;
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.footer .links a{
+    padding: 0.7rem 2rem;
+    color: #000;
+    border: var(--border);
+    font-size: 2rem;
+}
+.footer .links a:hover{
+    background: var(--main-color);
+}
+.footer .credit{
+    font-size: 2rem;
+    color: #000;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+.footer .credit span{
+    color: var(--main-color);
+}
